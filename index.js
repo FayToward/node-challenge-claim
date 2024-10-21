@@ -1,4 +1,6 @@
 const { ServiceBusClient } = require("@azure/service-bus");
+const serviceBusClient = new ServiceBusClient("<connectionString>");
+const sender = serviceBusClient.createSender("my-queue");
 
 const claim = {
   claimid: 123,
@@ -12,5 +14,4 @@ const message = {
   contentType: "application/json"
 };
 
-
-//still to do: send message to claims topic and close connection to SB
+await sender.sendMessages(message[0]);
