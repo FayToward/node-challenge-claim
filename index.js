@@ -1,5 +1,5 @@
 const { ServiceBusClient } = require("@azure/service-bus");
-const serviceBusClient = new ServiceBusClient("<connectionString>");
+const serviceBusClient = new ServiceBusClient("Endpoint=sb://faytoward.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=//AYOU7Xden9jvLCpvcLNgtpkLKIja4oI+ASbCQOmAk=");
 const sender = serviceBusClient.createSender("my-queue");
 
 const claim = {
