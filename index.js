@@ -14,3 +14,4 @@ const message = {
 
 await sender.sendMessages(message);
 console.log("message sent")
+await serviceBusClient.close()
