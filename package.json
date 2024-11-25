@@ -9,6 +9,7 @@
   "author": "Fay Toward",
   "license": "ISC",
   "dependencies": {
-    "@azure/service-bus": "^7.9.5"
+    "@azure/service-bus": "^7.9.5",
+    "dotenv": "^16.4.5"
   }
 }
